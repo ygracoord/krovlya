@@ -2,3 +2,14 @@
 .header__top {
     @extend %widthSize;
 }
+.header_content {
+    margin-top: 100px;
+    @extend %widthSize;
+    // height: 148px;
+    display: flex;
+
+    .header_preview {
+        width: 100%;
+        max-width: 10.67vw;
+    }
+}
