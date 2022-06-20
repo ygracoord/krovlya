@@ -1,6 +1,7 @@
 
 @import "_vars";
 @import "_mixins";
+@import "_templ";
 
 
 html {
@@ -26,4 +27,6 @@ body {
 
 // blocks
 @import "blocks/container";
+@import "blocks/header";
+@import "blocks/nav";
 

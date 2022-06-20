@@ -1,0 +1,38 @@
+
+.nav {
+    @extend %widthSize;
+}
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+    .nav-link a{
+        text-decoration: none;
+        font-family: $montseratt;
+        font-weight: 500;
+        font-size: .72vw;
+        color: $primary;
+        text-transform: uppercase;
+        position: relative;
+
+        &:after {
+            content: "";
+            width: 0;
+            height: 3px;
+            bottom: -10px;
+            left: 0;
+            z-index: 1;
+            background-color: $orange;
+            position: absolute;
+
+            transition: width .2s linear;
+        }
+
+        &:hover {
+            &:after {
+                width: 100%;
+            }
+        }
+    }
+}
