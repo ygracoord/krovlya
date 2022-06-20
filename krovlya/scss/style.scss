@@ -1,3 +1,29 @@
 
+@import "_vars";
+@import "_mixins";
 
+
+html {
+    font-size: 19.2px;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 1920px;
+    height: 1080px;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+
+    background: url(../assets/images/bg/BG.jpg) no-repeat;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+// blocks
+@import "blocks/container";
 
