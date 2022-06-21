@@ -113,12 +113,12 @@
                 <div class="popup__title">Быстро <br> оставить заявку</div>
                 <div class="popup__subtitle">Введите номер, мы позвоним вам в течение 10 минут в рабочее время</div>
                 <div class="popup__shedule">Пн–Пт 9:00 - 18:00, Сб 10:00 - 18:00</div>
-                <form action="">
+                <form action="" onsubmit="takeNumber()">
                     <label for="">
                         <div class="form__title">Введите номер телефона</div>
-                        <input class="tel" type="tel" placeholder="+7 (_ _ _) _ _ - _ _ - _ _">
+                        <input id="tel" class="tel" type="tel" placeholder="+7 (_ _ _) _ _ - _ _ - _ _">
                         <div class="popup__button">
-                            <button class="callme">Позвоните мне <img class="arrow-right" src="./assets/images/icons/svg/arrow-right.svg" alt=""></button>
+                            <button type="submit" class="callme">Позвоните мне <img class="arrow-right" src="./assets/images/icons/svg/arrow-right.svg" alt=""></button>
                         </div>
                         <div class="confidential">
                             <input type="checkbox" class="custom-check">
@@ -129,6 +129,6 @@
             </div>
         </div>
     </div>
-    <script src="./js/index.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
