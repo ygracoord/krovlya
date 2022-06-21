@@ -1,0 +1,16 @@
+
+@mixin buttonSet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    height: 100px;
+    border: 0;
+    border-radius: 500px;
+    font-weight: 600;
+    font-size: .72vw;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}

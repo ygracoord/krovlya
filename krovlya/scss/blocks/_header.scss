@@ -132,6 +132,11 @@
             letter-spacing: 1px;
             line-height: 1.5;
             border-bottom: 3px dotted $green;
+            transition: .2s linear;
+
+            &:hover {
+                font-size: .7vw;
+            }
         }
     }
 }
@@ -146,9 +151,15 @@
     align-items: center;
     padding: 12.3px;
     border-radius: 50%;
+    transition: transform .3s linear;
+
+    a {
+        line-height: 0;
+    }
 
     &:hover {
         cursor: pointer;
+        transform: translateY(-5px);
     }
 }
 
