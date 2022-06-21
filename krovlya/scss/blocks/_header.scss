@@ -1,6 +1,10 @@
 
 .header__top {
     @extend %widthSize;
+
+    @include breakpoint($mobile-bp) {
+        display: none;
+    }
 }
 .header__content {
     @extend %widthSize;

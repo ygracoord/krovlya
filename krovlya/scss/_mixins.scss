@@ -3,8 +3,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 375px;
-    height: 100px;
+    width: 100%;
+    max-width: 375px;
+    height: 100%;
+    min-height: 100px;
     border: 0;
     border-radius: 500px;
     font-weight: 600;
@@ -13,4 +15,10 @@
     color: #fff;
     letter-spacing: 1px;
     line-height: 1.5;
+}
+
+@mixin breakpoint($bp) {
+    @media screen and (max-width: $bp) {
+        @content;
+    }
 }
