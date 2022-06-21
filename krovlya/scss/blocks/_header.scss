@@ -1,0 +1,169 @@
+
+.header__top {
+    @extend %widthSize;
+
+    @include breakpoint($mobile-bp) {
+        display: none;
+    }
+}
+.header__content {
+    @extend %widthSize;
+    height: 148px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid hsla(0, 0, 11, .07);
+
+    .header_preview {
+        width: 100%;
+        max-width: 205px;
+        padding-top: 18px;
+        text-align: center;
+        font-size: .62vw;
+        line-height: 1.8;
+
+        .preview-top {
+            font-weight: 400;
+        }
+
+        .sb {
+            font-weight: 600;
+        }
+
+        .preview-bottom {
+            margin-top: 15px;
+        }
+    }
+    .header_download {
+        width: 100%;
+        max-width: 220px;
+        display: flex;
+        align-items: center;
+
+        .pdf-icon {
+            width: 44px;
+            height: 44px;
+            margin-right: 17.5px;
+            border: 0;
+            border-radius: 50%;
+            box-shadow: 0 0 25px hsla(0, 0, 0, .05);
+            padding: 15px 11px;
+            background-color: white;
+            font-weight: 600;
+            font-size: .57vw;
+            color: $green;
+        }
+        a {
+            text-decoration: none;
+        }
+        .download-text {
+            height: 20px;
+            font-weight: 600;
+            font-size: .62vw;
+            border-bottom: 3px dotted $green;
+        }
+    }
+    .header_logo {
+        width: 274px;
+        height: 148px;
+
+        transform: translateY(-22px);
+    }
+    .header_social {
+        text-align: center;
+
+        .social-title {
+            font-weight: 400;
+            font-size: .62vw;
+            position: relative;
+
+            &::before {
+                content: "";
+                width: 5px;
+                height: 5px;
+                display: block;
+                position: absolute;
+                top: 4px;
+                left: 13px;
+                z-index: 1;
+                background-color: $green;
+                border-radius: 50%;
+
+
+            }
+        }
+
+        .social-icons {
+            margin-top: 16.5px;
+            width: 160px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .viber-icon {
+            background-color: #976FCC;
+        }
+        .watsup-icon {
+            background-color: $green;
+        }
+        .telegram-icon {
+            background-color: #05A0EB;
+        }
+
+    }
+    .header_contacts {
+        width: 100%;
+        max-width: 243px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        .contacts-time {
+            font-weight: 400;
+            font-size: .62vw;
+        }
+        .contacts-tel {
+            margin: 6px 0;
+            font-size: 1.14vw;
+            font-weight: 600;
+        }
+        .callme {
+            text-decoration: none;
+            color: $green;
+            font-weight: 600;
+            font-size: .62vw;
+            letter-spacing: 1px;
+            line-height: 1.5;
+            border-bottom: 3px dotted $green;
+            transition: .2s linear;
+
+            &:hover {
+                font-size: .7vw;
+            }
+        }
+    }
+}
+.b700 {
+    font-weight: 700;
+}
+[class*="--icon"] {
+    width: 43px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12.3px;
+    border-radius: 50%;
+    transition: transform .3s linear;
+
+    a {
+        line-height: 0;
+    }
+
+    &:hover {
+        cursor: pointer;
+        transform: translateY(-5px);
+    }
+}
+

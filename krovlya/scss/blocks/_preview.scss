@@ -1,0 +1,126 @@
+
+.preview {
+    margin-top: 80px;
+
+    .preview__inner {
+        display: flex;
+    }
+}
+
+.paragraphs {
+    background-color: #fff;
+    width: 225px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 20px;
+    padding: 53px 40px ;
+    box-shadow: 0 0 75px hsla(0, 0, 0, .03);
+
+    // clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+
+    //пробовал использовать polygon, но тогда не применяться box-shadow.
+
+    .item-text {
+        // margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 0.72vw;
+        text-align: center;
+        line-height: 1.7;
+    }
+    .item-shadow {
+        transform: translate(-15px, 12px);
+    }
+
+}
+.preview__main {
+    margin-left: 71px;
+    width: 100%;
+    max-width: 728px;
+
+    .preview__title {
+        padding-top: 15px;
+        font-weight: 300;
+        font-size: 2.86vw;
+        line-height: 1.5;
+
+        .sb600 {
+            font-weight: 600;
+        }
+    }
+
+    .preview__subtitle {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 1.66vw;
+
+        .circles-icon {
+            margin-right: 10px;
+            transform: translateY(-5px);
+        }
+    }
+
+    .buttons {
+        margin-top: 45px;
+        display: flex;
+    }
+    .calculate {
+        @include buttonSet;
+        background-color: $green;
+        transition: .5s ease-in-out;
+
+        .arrow {
+            margin-left: 30px;
+            transform: translateY(3px);
+        }
+
+        &:hover {
+            background-color: #21E27C;
+            cursor: pointer;
+
+            .arrow {
+                margin-left: 17px;
+            }
+        }
+    }
+    .write-to-view {
+        margin-left: 18px;
+        @include buttonSet;
+        background-color: #F38120;
+        transition: .5s ease-in-out;
+
+        .arrow {
+            margin-left: 30px;
+            transform: translateY(3px);
+        }
+
+        &:hover {
+            background-color: #FD9C49;
+            cursor: pointer;
+
+            .arrow {
+                margin-left: 17px;
+            }
+        }
+    }
+    .answer {
+        margin-top: 38px;
+        width: 100%;
+        max-width: 276px;
+        display: flex;
+        justify-content: space-between;
+
+        .answer-text {
+            width: 234px;
+            text-align: center;
+            font-weight: 400;
+            font-size: .72vw;
+            line-height: 1.5;
+
+            .sb600 {
+                font-weight: 600;
+            }
+        }
+    }
+}
